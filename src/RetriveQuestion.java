@@ -41,6 +41,10 @@ public class RetriveQuestion extends HttpServlet {
 		catch(Exception e) 
 		{
 			System.out.println(e.toString());
+		}finally{
+			if(con!=null){
+				con.close();
+			}
 		}
 		
 		
